@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: lightcoral;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            border: 2px solid black;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .nav{
+            background-color: lightseagreen;
+            padding: 10px;
+            border: 2px solid black;
+            width: 100%;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .nav ul{
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+        }
+        .nav ul li a{
+            color: lightgreen;
+            text-decoration: none;
+            font-size: larger;
+        }
+
+        .side{
+            background-color: lightskyblue;
+            padding: 10px;
+            border: 2px solid black;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .side ul{
+            list-style-type: none;
+        }
+        .side ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            display: block;
+        }
+        .footer{
+            padding: 5px;
+            text-align: center;
+            background-color: lightpink;
+            border: 2px solid black;
+            width: 100%;
+
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .main{
+            background-color: lightblue;
+            border: 2px solid black;
+            width: 100%;
+
+        }
+        .gcon{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="gcon">
+        <!---header section-->
+        <div class="header">
+            <h1>Welcome to my WebPage</h1>
+        </div>
+
+        <!---navigation bar-->
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </div>
+        
+        <div class="side">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </div>
+        
+        <div class="main">
+            <h1>Main content</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odit ducimus temporibus illo velit, esse pariatur iusto nesciunt dicta incidunt voluptates labore animi expedita dolorem necessitatibus dolores eos qui assumenda dignissimos dolor consequuntur quam sit. Reiciendis officia, corrupti pariatur sunt non rerum? Veniam, omnis odio. Repudiandae placeat totam perferendis doloremque autem maxime reprehenderit unde nobis assumenda commodi. Pariatur beatae expedita tempore officia voluptas atque deserunt voluptatem sequi iure error odit eos vero vel magnam amet doloremque ab ducimus obcaecati non eum excepturi, repellendus omnis officiis suscipit. Quidem fugit nostrum et, deserunt atque dolorem ipsam illo cupiditate voluptates aliquam inventore saepe.</p>
+        </div>
+
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>
